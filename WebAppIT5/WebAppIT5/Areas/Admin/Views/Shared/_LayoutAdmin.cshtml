@@ -1,0 +1,177 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Blank Page</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/Public/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/Public/dist/css/adminlte.min.css">
+
+    <!-- jQuery -->
+    <script src="~/Public/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Public/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Public/dist/js/demo.js"></script>
+
+    @RenderSection("header", required: false)
+</head>
+<body>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../../index3.html" class="brand-link">
+            <img src="~/Public/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <span class="brand-text font-weight-light">AdminLTE 3</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="~/Public/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="#" class="d-block">Alexander Pierce</a>
+                </div>
+            </div>
+            <!-- Sidebar Menu -->
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Menu Sản phẩm: Loại SP, Sản phẩm, Nhà cung cấp -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-procedures " aria-hidden="true"></i>
+                            <p>
+                                Sản phẩm
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Product")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Danh mục sản phẩm</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Category")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Danh mục loại sản phẩm</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Supplier")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Danh mục nhà cung cấp</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu danh mục bài viết-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-pen "></i>
+                            <p>
+                                Bài viết
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Post")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Danh sách bài viết</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Topic")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Chủ đề bài viết</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Page")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Trang đơn</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--Menu dành cho giao diện-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-book "></i>
+                            <p>
+                                Giao diện
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Menu")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Menu</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Slider")" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Slide Show</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!--Phàn còn lại của menu-->
+                    <li class="nav-header">LABELS</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-circle text-danger"></i>
+                            <p class="text">Important</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-circle text-warning"></i>
+                            <p>Warning</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-circle text-info"></i>
+                            <p>Informational</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    @RenderBody()
+
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+            <b>Version</b> 3.1.0
+        </div>
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+    @RenderSection("footer", required: false)
+</body>
+</html>
