@@ -77,3 +77,10 @@ D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\obj\Debug\WebAppIT5.csproj.CoreCom
 D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\obj\Debug\WebAppIT5.csproj.CopyComplete
 D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\obj\Debug\WebAppIT5.dll
 D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\obj\Debug\WebAppIT5.pdb
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\EntityFramework.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\EntityFramework.SqlServer.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\MyClass.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\MyClass.pdb
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\MyClass.dll.config
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\EntityFramework.xml
+D:\Learning\GitHub\WebApp\WebAppIT5\WebAppIT5\bin\EntityFramework.SqlServer.xml
