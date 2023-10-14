@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MyClass.Model;
 using MyClass.DAO;
+using WebAppIT5.Library;
 
 namespace WebAppIT5.Areas.Admin.Controllers
 {
@@ -41,6 +42,8 @@ namespace WebAppIT5.Areas.Admin.Controllers
         // GET: Admin/Category/Create
         public ActionResult Create()
         {
+            ViewBag.ListCat = new SelectList(categoriesDAO.getList("Index"),"Id","Name");
+            ViewBag.ListOrder = new SelectList(categoriesDAO.getList("Index"), "Order", "Name");
             return View();
         }
         /// ////////////////////////////////////////////////////////////////////////////////////
@@ -51,10 +54,32 @@ namespace WebAppIT5.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                // xử lý tự động cho : createAt
+                categories.CreateAt = DateTime.Now;
+                // xử lý tự động cho : updateAt
+                categories.UpdateAt = DateTime.Now;
+                // xử lý tự động cho : parentId
+                if (categories.ParentID==null)
+                {
+                    categories.ParentID = 0;
+                }
+                // xử lý tự động cho : order
+                if (categories.Order==null)
+                {
+                    categories.Order = 1;
+                }
+                else
+                {
+                    categories.Order += 1;
+                }
+                // xử lý tự động cho : slug
+                categories.Slug = XString.Str_Slug(categories.Name);
+                // thêm dòng dữ liệu cho database
                 categoriesDAO.Insert(categories);
                 return RedirectToAction("Index");
             }
-
+            ViewBag.ListCat = new SelectList(categoriesDAO.getList("Index"), "Id", "Name");
+            ViewBag.ListOrder = new SelectList(categoriesDAO.getList("Index"), "Order", "Name");
             return View(categories);
         }
         
@@ -110,6 +135,31 @@ namespace WebAppIT5.Areas.Admin.Controllers
         {
             Categories categories = categoriesDAO.getRow(id);
             categoriesDAO.Delete(categories);
+            return RedirectToAction("Index");
+        }
+
+        /// ////////////////////////////////////////////////////////////////////////////////////
+        /// status
+        // GET: Admin/Category/status/5 
+        public ActionResult Status(int? id)
+        {
+            if (id==null)
+            {
+                // thong bao that bai
+                TempData["message"] = ("Cập nhật trạng thái thất bại");
+                return RedirectToAction("Index");
+            }
+            // tim dong co ID = ID cua loai san pham can thay doi status
+            Categories categories = categoriesDAO.getRow(id);
+            // kiem tra trang thai cua status, neu hien tai la 1 -> 2 va nguoc lai (2->1)
+            categories.Status = (categories.Status == 1) ? 2 : 1;
+            // cap nhat gia tri cho updateAt
+            categories.UpdateAt = DateTime.Now;
+            // cap nhat lai database
+            categoriesDAO.Update(categories);
+            // tra ket qua ve index
+            // thong bao thanh cong
+            TempData["message"] = ("Cập nhật trạng thái thành công");
             return RedirectToAction("Index");
         }
     }

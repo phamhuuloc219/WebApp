@@ -1,0 +1,7 @@
+﻿﻿@if (TempData.ContainsKey("message"))
+{
+    WebAppIT5.Library.XMessage message = (WebAppIT5.Library.XMessage)TempData["message"];
+    <div class="alert alert-@message.TypeMsg">
+        @message.Msg
+    </div>
+}

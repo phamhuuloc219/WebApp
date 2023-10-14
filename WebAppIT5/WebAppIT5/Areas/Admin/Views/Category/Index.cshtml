@@ -28,7 +28,8 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                    @Html.Partial("message")
+                        <table class="table table-bordered table-striped">
                             <tr>
                                 <th>@Html.DisplayNameFor(model => model.Id)</th>
                                 <th>@Html.DisplayNameFor(model => model.Name)</th>
