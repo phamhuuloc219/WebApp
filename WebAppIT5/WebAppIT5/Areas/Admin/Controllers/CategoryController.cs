@@ -159,7 +159,7 @@ namespace WebAppIT5.Areas.Admin.Controllers
             categoriesDAO.Update(categories);
             // tra ket qua ve index
             // thong bao thanh cong
-            TempData["message"] = ("Cập nhật trạng thái thành công");
+            TempData["message"] = new XMessage ("success","Cập nhật trạng thái thành công");
             return RedirectToAction("Index");
         }
     }
