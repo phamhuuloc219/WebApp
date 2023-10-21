@@ -151,6 +151,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Public\css\jquery.dataTables.min.css" />
     <Content Include="Public\css\main.css" />
     <Content Include="Public\css\style.css" />
     <Content Include="Public\dist\css\adminlte.css" />
@@ -310,6 +311,7 @@
     <Content Include="Public\img\r7.jpg" />
     <Content Include="Public\img\r8.jpg" />
     <Content Include="Public\img\r9.jpg" />
+    <Content Include="Public\js\jquery.dataTables.min.js" />
     <Content Include="Public\js\main.js" />
     <Content Include="Public\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Public\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
@@ -2658,6 +2660,7 @@
     <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\Message.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Trash.cshtml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
