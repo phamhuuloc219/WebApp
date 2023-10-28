@@ -1,0 +1,12 @@
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\MyClass.dll.config
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\MyClass.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\MyClass.pdb
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\EntityFramework.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\EntityFramework.SqlServer.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\EntityFramework.xml
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\bin\Release\EntityFramework.SqlServer.xml
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\obj\Release\MyClass.csproj.AssemblyReference.cache
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\obj\Release\MyClass.csproj.CoreCompileInputs.cache
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\obj\Release\MyClass.csproj.CopyComplete
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\obj\Release\MyClass.dll
+D:\Learning\GitHub\WebApp\WebAppIT5\MyClass\obj\Release\MyClass.pdb
