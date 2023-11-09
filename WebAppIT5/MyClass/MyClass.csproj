@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\CategoriesDAO.cs" />
+    <Compile Include="DAO\ProductsDAO.cs" />
     <Compile Include="DAO\SuppliersDAO.cs" />
     <Compile Include="Model\Categories.cs" />
     <Compile Include="Model\Contacts.cs" />
