@@ -1,37 +1,36 @@
-﻿using MyClass.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyClass.Model;
 
 namespace MyClass.DAO
 {
     public class ProductsDAO
     {
+        //Copy noi dung cua class CATEGORIES, thay the Categories bang Suppliers
         private MyDBContext db = new MyDBContext();
 
-        ///////////////////////////////////////////////////////////////
-        ///INDEX
+        //SELECT * FROM ...
         public List<Products> getList()
         {
             return db.Products.ToList();
         }
 
-        /////////////////////////////////////////////////////////////
-        ///INDEX voi gia tri Status 1,2 - 0: An khoi trang giao dien
-        public List<Products> getList(string status = "All")
-        {//tra ve danh sach cac NCC co staus =1 hoac 2 0 hoac tat ca
+        //Index chi voi staus 1,2        
+        public List<Products> getList(string status = "ALL")//status 0,1,2
+        {
             List<Products> list = null;
             switch (status)
             {
-                case "Index": //status == 1,2
+                case "Index"://1,2
                     {
                         list = db.Products.Where(m => m.Status != 0).ToList();
                         break;
                     }
-                case "Trash": //status == 0
+                case "Trash"://0
                     {
                         list = db.Products.Where(m => m.Status == 0).ToList();
                         break;
@@ -44,9 +43,7 @@ namespace MyClass.DAO
             }
             return list;
         }
-
-        /////////////////////////////////////////////////////////////
-        ///DETAILS hien thi 1 dong du lieu
+        //details
         public Products getRow(int? id)
         {
             if (id == null)
@@ -59,28 +56,25 @@ namespace MyClass.DAO
             }
         }
 
-        /////////////////////////////////////////////////////////////
-        ///CREATE = Insert 1 dong DB
+        //tao moi mau tin
         public int Insert(Products row)
         {
             db.Products.Add(row);
             return db.SaveChanges();
         }
 
-        /////////////////////////////////////////////////////////////
-        ///EDIT = Update 1 dong DB
+        //cap nhat mau tin
         public int Update(Products row)
         {
             db.Entry(row).State = EntityState.Modified;
             return db.SaveChanges();
         }
 
-        /////////////////////////////////////////////////////////////
-        ///DELETE = Delete 1 dong DB
+        //Xoa mau tin
         public int Delete(Products row)
         {
             db.Products.Remove(row);
-            return db.SaveChanges();
+            return db.SaveChanges();//thanh cong => return 1
         }
     }
 }

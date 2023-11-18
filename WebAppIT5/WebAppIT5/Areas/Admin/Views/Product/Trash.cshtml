@@ -1,16 +1,16 @@
 ﻿﻿@model IEnumerable<MyClass.Model.Products>
 
 @{
-    ViewBag.Title = "Trang chủ sản phẩm";
+    ViewBag.Title = "Thùng rác sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 @section header{
-    <link rel="stylesheet" href="~/Public/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="~/Public/css/jquery.dataTables.min.css" />
 }
 
 @section footer{
-    <script src="~/Public/js/jquery.dataTables.js"></script>
+    <script src="~/Public/js/jquery.dataTables.min.js"></script>
     <script>let table = new DataTable('#myTable');</script>
 }
 
@@ -26,12 +26,11 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-md-6">
-                            <strong class="text-danger">DANH MỤC SẢN PHẨM</strong>
+                            <strong class="text-danger">THÙNG RÁC SẢN PHẨM</strong>
                         </div>
 
                         <div class="col-md-6 text-right">
-                            <a href="@Url.Action("Create","Product")" class="btn-sm btn-success"><i class="fa fa-plus"></i> Thêm</a>
-                            <a href="@Url.Action("Trash","Product")" class="btn-sm btn-danger"><i class="fa fa-trash"></i> Thùng rác</a>
+                            <a href="@Url.Action("Index","Product")" class="btn-sm btn-info"><i class="fa fa-long-arrow-alt-left"></i> Quay lại</a>
                         </div>
                     </div>
                 </div>
@@ -64,17 +63,8 @@
                                     <td>@Html.DisplayFor(modelItem => item.Qty)</td>
                                     <td><img src="~/Public/img/product/@item.Image" alt="Image" class="img-fluid" /></td>
                                     <td>
-                                        @if (item.Status == 1)
-                                        {
-                                            <a href="@Url.Action("Status","Product", new { id = item.Id })" class="btn-sm btn-success"><i class="fa fa-toggle-on"></i></a>
-                                        }
-                                        else
-                                        {
-                                            <a href="@Url.Action("Status","Product", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-toggle-off"></i></a>
-                                        }
-                                        <a href="@Url.Action("Edit","Product", new { id = item.Id })" class="btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                        <a href="@Url.Action("Details","Product", new { id = item.Id })" class="btn-sm btn-info"><i class="fa fa-eye"></i></a>
-                                        <a href="@Url.Action("DelTrash","Product", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                        <a href="@Url.Action("Recover","Product", new { id = item.Id })" class="btn-sm btn-primary"><i class="fa fa-undo"></i></a>
+                                        <a href="@Url.Action("Delete","Product", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             }

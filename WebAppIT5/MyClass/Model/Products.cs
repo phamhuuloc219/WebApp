@@ -32,17 +32,17 @@ namespace MyClass.Model
         [Display(Name = "Hình ảnh")]
         public string Image { get; set; }
 
-        [Required(ErrorMessage = "Giá sản phẩm không được để trống")]
-        [Display(Name = "Giá sản phẩm")]
+        [Required(ErrorMessage = "Giá nhập không được để trống")]
+        [Display(Name = "Giá nhập")]
         public decimal Price { get; set; }
 
-        [Required(ErrorMessage = "Giá bán sản phẩm không được để trống")]
-        [Display(Name = "Giá bán sản phẩm")]
+        [Required(ErrorMessage = "Giá bán không được để trống")]
+        [Display(Name = "Giá bán")]
         public decimal SalePrice { get; set; }
 
         [Required(ErrorMessage = "Số lượng không được để trống")]
         [Display(Name = "Số lượng")]
-        public int Amount { get; set; }
+        public int Qty { get; set; }
 
         [Required(ErrorMessage = "Mô tả không được để trống")]
         [Display(Name = "Mô tả")]
