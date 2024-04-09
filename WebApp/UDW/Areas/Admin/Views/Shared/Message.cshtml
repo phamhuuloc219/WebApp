@@ -1,0 +1,8 @@
+﻿﻿@if (TempData.ContainsKey("message"))
+{
+
+    UDW.Library.XMessage message = (UDW.Library.XMessage)TempData["message"];
+    <div class="alert alert-@message.TypeMsg">
+        @message.Msg
+    </div>
+}

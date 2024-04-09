@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MyClass.Model.Menus>
+@using UDW.Library
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand logo_h" href="https://localhost:44310/"><img src="~/Public/img/gallery/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+
+            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                @foreach (var item in Model)
+                {
+                    @Html.Action("MainMenuSub", "Module", new { @id = @item.Id });
+                }
+            </ul>
+
+            <ul class="nav-shop">
+                @*neu gio hang khac null*@
+                @{
+                    int soluong = 0;
+                    var cartSession = System.Web.HttpContext.Current.Session["MyCart"] as List<CartItem>;
+                    if (cartSession!=null)
+                    {
+                        
+                        soluong = cartSession.Count;
+                    }
+                }
+                
+                <li class="nav-item"><button><i class="ti-search"></i></button></li>
+                <li class="nav-item"><button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">@soluong</span></button> </li>
+                <li class="nav-item"><a class="button button-header" href="~/gio-hang">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

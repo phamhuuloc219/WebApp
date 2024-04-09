@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MyClass.Model.ProductInfo>
+
+@{
+    var item = ViewBag.Categories;
+}
+
+<section class="section-margin calc-60px">
+    <div class="container">
+        <div class="section-intro pb-60px">
+            <p>Tất cả sản phẩm</p>
+            <h2>Tất cả <span class="section-intro__style">sản phẩm</span></h2>
+        </div>
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                        <div class="card-product__img">
+                            <img class="card-img" src="~/Public/img/product/@product.Image" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><button><i class="ti-search"></i></button></li>
+                                <li>
+                                    <a href="@Url.Action("AddCart","Giohang", new { productid = product.Id})">
+                                        <span class="custom-button">
+                                            <i class="ti-shopping-cart"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><button><i class="ti-heart"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p>@product.CatName</p>
+                            <h4 class="card-product__title"><a href="@product.Slug">@product.Name</a></h4>
+                            <p strong class="card-product__price text-success">@string.Format("{0:0,0.00,00}", @product.Price)<sup>đ</sup></p>
+                            <del><span class="danger card-product__price text-danger">@string.Format("{0:0,0.00,00}", @product.SalePrice)</span></del><sup>đ</sup>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+    </div>
+</section>

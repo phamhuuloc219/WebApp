@@ -1,0 +1,77 @@
+﻿@model IEnumerable<MyClass.Model.ProductInfo>
+
+@{
+    var item = ViewBag.Categories;
+}
+@{
+    ViewBag.Title = item.Name;
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<body>
+    <!-- ================ start banner area ================= -->
+    <section class="blog-banner-area" id="category">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1 class="text-uppercase">@item.Name</h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@item.Slug">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@item.Name</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ end banner area ================= -->
+    <!-- ================ category section start ================= -->
+    <section class="section-margin--small mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    @* Category List Begin *@
+                    @Html.Action("CategoriesList", "Module")
+                </div>
+                @* Category List End *@
+
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <!-- Start Best Seller -->
+                    <section class="lattest-product-area pb-40 category-list">
+                        <div class="row">
+                            @foreach (var productItem in Model)
+                            {
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card text-center card-product">
+                                        <div class="card-product__img">
+                                            <img class="card-img" src="Public/img/product/@productItem.Image" alt="">
+                                            <ul class="card-product__imgOverlay">
+                                                <li><button><i class="ti-search"></i></button></li>
+                                                <li>
+                                                    <a href="@Url.Action("AddCart","Giohang", new {productid = @productItem.Id})">
+                                                        <span class="custom-button">
+                                                            <i class="ti-shopping-cart"></i>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li><button><i class="ti-heart"></i></button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>@productItem.CatName</p>
+                                            <h4 class="card-product__title"><a href="@productItem.Slug">@productItem.Name</a></h4>
+                                            <p strong class="card-product__price text-success">@string.Format("{0:0,0.00,00}", @productItem.Price)<sup>đ</sup></p>
+                                            <del><span class="danger card-product__price text-danger">@string.Format("{0:0,0.00,00}", @productItem.SalePrice)</span></del><sup>đ</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </section><!-- End Best Seller -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ category section end ================= -->
+    </body>

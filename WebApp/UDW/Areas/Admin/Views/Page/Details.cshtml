@@ -1,0 +1,57 @@
+﻿@model MyClass.Model.Posts
+
+@{
+    ViewBag.Title = "Chi tiết trang đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong class="text-danger">CHI TIẾT TRANG ĐƠN</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="@Url.Action("Edit","Page",  new { id = Model.Id })" class="btn-sm btn-success"> <i class="fa fa-edit"> Sửa</i></a>
+                        <a href="@Url.Action("Index","Page")" class="btn-sm btn-info"> <i class="fa fa-long-arrow-alt-left"></i> Quay lại</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                @*Hien thi noi dung thong bao ngay ben tren bang du lieu*@
+                @Html.Partial("Message")
+                <table class="table table-bordered table-striped" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>@Html.DisplayNameFor(model => model.Title)</th>
+                            @*Page khong co chu de*@
+                            <th>@Html.DisplayNameFor(model => model.PostType)</th>
+                            <th>@Html.DisplayNameFor(model => model.Image)</th>
+                            <th>@Html.DisplayNameFor(model => model.Id)</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="checkid" value="" /></td>
+                            <td>@Html.DisplayFor(model => model.Title)</td>
+                            @*Page khong co chu de*@
+                            <td>@Html.DisplayFor(model => model.PostType)</td>
+                            <td><img src="~/Public/img/page/@Model.Image" alt="Img" class="img-fluid" /></td>
+                            <td>@Html.DisplayFor(model => model.Id)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!-- /.card-body -->
+        </div><!-- /.card -->
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->

@@ -1,0 +1,14 @@
+﻿@model MyClass.Model.Menus
+<li class="nav-item submenu dropdown">
+    <a id="menuLink" href="@Model.Link" class="nav-link dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true"
+       aria-expanded="false">@Model.Name</a>
+</li>
+
+<script>
+    // Lắng nghe sự kiện click chuột trên liên kết menu
+    document.getElementById("menuLink").addEventListener("click", function (e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+        var url = this.getAttribute("href"); // Lấy URL từ thuộc tính href của liên kết
+        window.location.href = url; // Chuyển hướng trang đến URL đã lấy
+    });
+</script>

@@ -1,0 +1,63 @@
+﻿@model MyClass.Model.Posts
+@{
+    ViewBag.Title = "PostPage";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<body>
+    <!-- ================ start banner area ================= -->
+    <section class="blog-banner-area" id="blog">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1>@Model.Title</h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi tiết bài viết</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ end banner area ================= -->
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area py-80px section-margin--small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post row">
+                        <div class="col-lg-12">
+                            <div class="feature-img">
+                                <img class="img-fluid" src="~/Public/img/page/@Model.Image" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-9 col-md-9 blog_details">
+                            @Model.Detail
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Chủ đề bài viết</h4>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Technology</p>
+                                        <p>37</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="br"></div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+</body>
+

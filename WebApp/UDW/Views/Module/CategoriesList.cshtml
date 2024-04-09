@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MyClass.Model.Categories>
+<div class="sidebar-categories">
+    <div class="head">Danh mục sản phẩm</div>
+    <ul class="list-group list-group-flush">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item text-uppercase">
+                <a href="~/@item.Slug">@item.Name</a>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,72 @@
+﻿@model MyClass.Model.Posts
+
+@{
+    ViewBag.Title = "Xác nhận xóa trang đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section header {
+    <link href="~/Public/css/cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+@section footer {
+    <script src="~/Public/js/cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js"></script>
+    <script>let table = new DataTable('#myTable');</script>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content my-2">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong class="text-danger">BẠN CÓ CHẮC CHẮN XÓA TRANG ĐƠN NÀY?</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="@Url.Action("Index","Page")" class="btn-sm btn-info"> <i class="fa fa-long-arrow-alt-left"></i> Quay lại</a>
+                        </div>
+                    </div><!-- /.class-row -->
+                </div>
+                <div class="card-body">
+                    @*Hien thi noi dung thong bao ngay ben tren bang du lieu*@
+                    @Html.Partial("Message")
+                    <table class="table table-bordered table-striped" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>@Html.DisplayNameFor(model => model.Title)</th>
+                                @*Page khong co chu de*@
+                                <th>@Html.DisplayNameFor(model => model.PostType)</th>
+                                <th>@Html.DisplayNameFor(model => model.Image)</th>
+                                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="checkid" value="" /></td>
+                                <td>@Html.DisplayFor(model => model.Title)</td>
+                                @*Page khong co chu de*@
+                                <td>@Html.DisplayFor(model => model.PostType)</td>
+                                <td><img src="~/Public/img/page/@Model.Image" alt="Img" class="img-fluid" /></td>
+                                <td>@Html.DisplayFor(model => model.Id)</td>
+                                <td>
+                                    <button class="btn-sm btn-danger" type="submit" name="Delete"> Xóa [Delete] <i class="fa fa-trash"></i> </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /.card-body -->
+            </div><!-- /.card -->
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MyClass.Model.Menus>
+
+@{
+    var menu = ViewBag.Menu2cap;
+}
+<li class="nav-item submenu dropdown">
+    <a id="menu2cap" class="nav-link dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true"
+       aria-expanded="false" href="@menu.Link">@menu.Name</a>
+    <ul class="dropdown-menu">
+        @foreach (var item in Model)
+        {
+            <li class="nav-item"><a class="nav-link text-uppercase" href="@item.Link">@item.Name</a></li>
+        }
+    </ul>
+</li>
+
+@*Them su kien de click chuot va tai trang*@
+<!--<script>
+    // Lắng nghe sự kiện click chuột trên liên kết menu cấp 2
+    document.getElementById("menu2cap").addEventListener("click", function (e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+        var url = this.getAttribute("href"); // Lấy URL từ thuộc tính href của liên kết
+        window.location.href = url; // Chuyển hướng trang đến URL đã lấy
+    });
+</script>-->

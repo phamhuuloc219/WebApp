@@ -1,0 +1,13 @@
+﻿body {
+
+}
+.custom-button {
+    display: inline-block;
+    padding: 5px 10px; /* Tùy chỉnh kích thước và khoảng cách bên trong nút */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: none;
+    text-align: center;
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    cursor: pointer;
+}

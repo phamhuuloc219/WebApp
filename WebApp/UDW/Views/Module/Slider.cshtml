@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MyClass.Model.Sliders>
+
+<section class="section-margin mt-0">
+    <div class="owl-carousel owl-theme hero-carousel">
+
+        @{ int index = 0;}
+        @foreach (var item in Model)
+        {
+            if (index == 0)
+            {
+                <div class="card text-center card-product">
+                    <img class="img-fluid" src="Public/img/slider/@item.Image" alt="">
+                </div>
+            }
+            else
+            {
+                <div class="card text-center card-product">
+                    <img class="img-fluid" src="Public/img/slider/@item.Image" alt="">
+                </div>
+            }
+            index++;
+        }
+    </div>
+        </section>
+

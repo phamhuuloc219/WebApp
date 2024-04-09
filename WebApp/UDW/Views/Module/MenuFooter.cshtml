@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MyClass.Model.Menus>
+
+<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+    <div class="single-footer-widget tp_widgets">
+        <h4 class="footer_title">Menu</h4>
+        <ul class="list">
+            @foreach (var item in Model)
+            {
+                <li><a href="@item.Link">@item.Name</a></li>
+            }
+        </ul>
+    </div>
+</div>

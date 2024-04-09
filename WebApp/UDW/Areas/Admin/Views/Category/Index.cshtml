@@ -1,0 +1,89 @@
+﻿@model IEnumerable<MyClass.Model.Categories>
+
+@{
+    ViewBag.Title = "Tất cả loại sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section header {
+    <link href="~/Public/css/cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+@section footer {
+    <script src="~/Public/js/cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js"></script>
+    <script>let table = new DataTable('#myTable');</script>
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong class="text-danger">DANH MỤC LOẠI SẢN PHẨM</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="@Url.Action("Create","Category")" class="btn-sm btn-success"> <i class="fa fa-plus"></i>Thêm</a>
+                        <a href="@Url.Action("Trash","Category")" class="btn-sm btn-danger"> <i class="fa fa-trash"></i>Thùng rác</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                @*Hien thi noi dung thong bao ngay ben tren bang du lieu*@
+                @Html.Partial("Message")
+                <table class="table table-bordered table-striped" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>@Html.DisplayNameFor(model => model.Name)</th>
+                            <th>@Html.DisplayNameFor(model => model.Slug)</th>
+                            <th>@Html.DisplayNameFor(model => model.ParentID)</th>
+                            <th>@Html.DisplayNameFor(model => model.Order)</th>
+                            <th>@Html.DisplayNameFor(model => model.Id)</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td><input type="checkbox" name="checkid" value="" /></td>
+                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Slug)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ParentID)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Order)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                                <td>
+                                    @if (item.Status == 1)
+                                    {
+                                        <a href="@Url.Action("Status","Category", new { id = item.Id })" class="btn-sm btn-success"> <i class="fa fa-toggle-on"></i></a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action("Status","Category", new { id = item.Id })" class="btn-sm btn-danger"> <i class="fa fa-toggle-off"></i></a>
+                                    }
+                                    <a href="@Url.Action("Details","Category", new { id = item.Id })" class="btn-sm btn-primary"> <i class="fa fa-eye"></i></a>
+                                    <a href="@Url.Action("Edit","Category", new { id = item.Id })" class="btn-sm btn-info"> <i class="fa fa-edit"></i></a>
+                                    <a href="@Url.Action("DelTrash","Category", new { id = item.Id })" class="btn-sm btn-danger"> <i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+                <!-- /.card-body -->
+            </div>
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

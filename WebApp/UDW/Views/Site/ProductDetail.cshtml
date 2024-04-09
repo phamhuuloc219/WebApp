@@ -1,0 +1,96 @@
+﻿@model IEnumerable<MyClass.Model.ProductInfo>
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<body>
+    @foreach (var product in Model)
+    {
+        <!-- ================ start banner area ================= -->
+        <section class="blog-banner-area" id="blog">
+            <div class="container h-100">
+                <div class="blog-banner">
+                    <div class="text-center">
+                        <h1>Chi tiết sản phẩm</h1>
+                        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="@product.CategorySlug">@product.CatName</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ end banner area =================-->
+        <!--================Single Product Area =================-->
+        <div class="product_image_area">
+            <div class="container">
+                <div class="row s_product_inner">
+                    <div class="col-lg-6">
+                        <div class="owl-carousel owl-theme s_Product_carousel">
+                            <div class="single-prd-item">
+                                <img class="img-fluid" src="~/Public/img/product/@product.Image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="s_product_text">
+                            <h3>@product.Name</h3>
+                            <h2>@string.Format("{0:0,00}", @product.Price)<sup>đ</sup></h2>
+
+                            <ul class="list">
+                                <li><a class="active" href="@product.CategorySlug">Loại sản phẩm: @product.CatName</a></li>
+                            </ul>
+                            <p>
+                                Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for
+                                something that can make your interior look awesome, and at the same time give you the pleasant warm feeling
+                                during the winter.
+                            </p>
+                            <div class="product_count">
+                                <label for="qty">Quantity:</label>
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                        class="increase items-count" type="button">
+                                    <i class="ti-angle-left"></i>
+                                </button>
+                                <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        class="reduced items-count" type="button">
+                                    <i class="ti-angle-right"></i>
+                                </button>
+                                <a class="button primary-btn" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Single Product Area =================-->
+    }
+
+    <!-- ================Start related Product area =================-->
+    <section class="related-product-area section-margin--small mt-0">
+        <div class="container">
+            <div class="section-intro pb-60px">
+                <h2>Sản phẩm <span class="section-intro__style">cùng loại</span></h2>
+            </div>
+            <div class="row mt-30">
+                @foreach (var item in ViewBag.RelatedProducts)
+                {
+                    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+                        <div class="single-search-product-wrapper">
+                            <div class="single-search-product d-flex">
+                                <a href="#"><img src="~/Public/img/product/@item.Image" alt=""></a>
+                                <div class="desc">
+                                    <a href="@item.Slug" class="title">@item.Name</a>
+                                    <h5>@string.Format("{0:0,00}", @item.Price)<sup>đ</sup></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!--================ end related Product area =================-->
+</body>
