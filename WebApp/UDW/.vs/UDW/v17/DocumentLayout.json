@@ -7,55 +7,55 @@
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\controllers\\lienhecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\controllers\\lienhecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\lienhecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\controllers\\sitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\controllers\\sitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\sitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\controllers\\timkiemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\controllers\\timkiemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\timkiemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\controllers\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\controllers\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:controllers\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\module\\mainmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\module\\mainmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\module\\mainmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\module\\mainmenusub_0.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\module\\mainmenusub_0.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\module\\mainmenusub_0.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\module\\mainmenusub_1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\module\\mainmenusub_1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\module\\mainmenusub_1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\module\\menufooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\module\\menufooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\module\\menufooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\module\\slider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\module\\slider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\module\\slider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\site\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\site\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\site\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\site\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\site\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\site\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|d:\\learning\\github\\webapp\\webapp\\udw\\views\\site\\homeproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|D:\\Learning\\GitHub\\WebApp\\WebApp\\UDW\\views\\site\\homeproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2570EB1-1F86-448C-966E-7C7905C4DBEB}|UDW.csproj|solutionrelative:views\\site\\homeproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -91,8 +91,7 @@
               "RelativeToolTip": "Controllers\\LienheController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:43:14.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:43:14.56Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Controllers\\ModuleController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:43:12.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:43:12.921Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Controllers\\SiteController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:43:11.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:43:11.113Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Controllers\\TimkiemController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:43:10Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:43:10Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "Controllers\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:43:07.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:43:07.155Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "Views\\Site\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:28:57.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:28:57.29Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Views\\Site\\Home.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:28:50.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:28:50.981Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Views\\Module\\Slider.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:29:05.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:29:05.775Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "Views\\Module\\MenuFooter.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:29:07.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:29:07.359Z"
             },
             {
               "$type": "Document",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "Views\\Module\\MainMenuSub_1.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:29:08.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:29:08.306Z"
             },
             {
               "$type": "Document",
@@ -221,8 +211,7 @@
               "RelativeToolTip": "Views\\Module\\MainMenuSub_0.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:29:15.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:29:15.033Z"
             },
             {
               "$type": "Document",
@@ -234,8 +223,7 @@
               "RelativeToolTip": "Views\\Module\\MainMenu.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:29:18.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:29:18.746Z"
             },
             {
               "$type": "Document",
@@ -247,8 +235,7 @@
               "RelativeToolTip": "Views\\Site\\HomeProduct.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T17:28:39.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T17:28:39.433Z"
             }
           ]
         }
